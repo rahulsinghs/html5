@@ -1,0 +1,122 @@
+body{
+	font-family: Georgia,sans-serif;
+	font-size: small;
+	line-height:175%;
+	margin: 0 15% 0;
+	background-color: rgb(210, 220, 157);
+	/*background-repeat: no-repeat;*/
+	/*background-image: url(../img/ch13/bullseye.png);
+	background-position: center top;*/
+	background-image: url(../img/ch13/blackgoose.png);
+	background-repeat: no-repeat;
+	background-position: center 100px;
+	background-attachment: fixed;
+
+				
+}
+
+header{
+	margin-top: 0;
+	padding: 3em 1em 2em 1em;
+	/*background-image: url(../img/ch13/purpledot.png);*/
+	/*background-image: url(../img/ch13/target.png);
+	background-color: rgba(255, 255, 255, 0.5);
+	background-repeat: repeat-x;
+	background-position: center top;*/
+	background: url(../img/ch13/purpledot.png) left top repeat-y,
+				url(../img/ch13/purpledot.png) right top repeat-y,
+				url(../img/ch13/gooseshadow.png) 90% bottom no-repeat;
+
+	text-align: center;
+
+}
+
+h1{
+		font:bold 1.5em "Marko One", Georgia, serif;
+		color:olive;
+		text-shadow:0.05em 0.05em .1em lightslategray;
+}
+
+h1{
+		color: #993399;
+}
+
+
+dt{
+		font-weight:bold;
+		color:sienna;
+		
+}
+dt strong{
+		color:tomato;
+}
+strong{
+		font-style:italic;
+		color: tomato;
+}
+
+
+
+#info p{
+		font-style:italic;
+		color:gray;
+}
+
+h1,h2,#info{
+		text-align:center;
+}
+
+h2{
+		font-size:1em;
+		text-transform:uppercase;
+		letter-spacing:.5em;
+		color:#c60;
+}
+
+h2 + p{
+		text-align:center;
+		font-style:italic;
+}
+	.price{
+		font-family:Georgia,serif;
+		font-style:italic;
+		color:gray;
+}
+
+	.label{
+		font-weight:bold;
+		font-variant:small-caps;
+		font-style:normal;
+}
+
+p.warning, sup{
+		font-size:small;
+		color:red;
+}
+
+	#info li{
+		list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link{
+	color: #939;
+}
+
+a:visited{
+	color:#937393;
+}
+
+a:hover{
+	color: rgb(199, 0, 242);
+	background-color: #fff;
+	padding: 0 5px 0 5px;
+}
+
+a:active{
+	color: #ff00ff;
+
+}

@@ -1,0 +1,60 @@
+.container{
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: darksalmon;
+    box-shadow: 10px 10px 5px 5px grey;
+}
+
+.box1{
+    display: block;
+    width:70px;
+    height: 40px;
+    background-color: crimson;
+    margin: 5px;
+}
+
+.box2{
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-image: linear-gradient(120deg,red, blue,green);
+    position: relative;
+    top: 20%;
+    left: 10%;
+    box-shadow: 0 0 5px   rgb(0, 0, 0) ;
+}
+
+.para{
+    text-align: justify;
+}
+
+.img-bck{
+    float: right;
+    width: 100px;
+    background-color: green;
+    margin: 5px;
+}
+
+.flex-boxes{
+    display: flex;
+    background-color: cornflowerblue;
+    padding: 10px;
+    flex: 1 0 0%;
+}
+
+.bx{
+    display: flex;
+    background-color: midnightblue;
+    color: wheat;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 5px;
+}
+
+.box3{
+    margin-right: auto;
+}

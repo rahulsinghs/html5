@@ -1,0 +1,68 @@
+@media screen and (orientation:landscape) {
+    body{
+        background-color: bisque;
+    }
+      
+}
+
+#layout{
+    display: grid;
+    /*grid-template-columns: [ads]200px [main]500px [links]200px;*/
+    grid-template-columns: [ads-start]1fr [ads-end main]2fr [links]1fr;
+    grid-template-rows: 100px 400px 100px;
+    color: white;
+    font: large sans-serif;
+    grid-template-areas: "header header header" 
+                         "ads main link"
+                         "footer1 footer2 footer3";    
+}
+
+.columns{
+    column-width: 150px;
+    max-width: auto;
+    overflow: auto;
+    column-gap: 10px;
+}
+
+#one{
+    background-color: rgb(137, 15, 36);
+    height: 50px;
+
+}
+
+#two{
+    background-color: rgb(249, 108, 56);
+}
+
+
+
+#three{
+    background-color: rgb(115, 166, 27);
+}
+
+#four{
+    background-color: rgb(18, 167, 189);
+}
+
+#five{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(187, 84, 180);
+    color: rgb(36, 13, 4);
+}
+
+#six{
+    background-color: mediumslateblue;
+}
+
+#seven{
+    background-color: grey;
+}
+
+#eight{
+    background-color: khaki;
+}
+
+#nine{
+    background-color: plum;
+}

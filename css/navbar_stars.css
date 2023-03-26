@@ -1,0 +1,272 @@
+:root{
+    --pads:1rem
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;    
+    background-color: black;
+    position: relative;
+    
+}
+
+.container{
+    display: flex;
+    background-image: url(../img/mountain-stars.jpg);
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-direction:column;
+    /* border: 5px solid red; */
+    height: 100vh;
+    position: relative;
+}
+
+
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--pads);
+    background-color: rgba(255, 255, 255, 0.215);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 99;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-size: 2em;
+    color: white;
+}
+
+.nav-bar{
+    display: flex;
+    list-style: none;
+    gap: clamp(.5rem,2rem,3rem);
+    font-size: larger;
+   
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.login-btn{
+    background-color: transparent;
+    width: calc(2rem + 40px);
+    color: white;
+    height: 30px;
+}
+
+.greet{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--pads);
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* to fix the position to center*/
+}   
+
+main p{
+    color: white;
+    text-align: center;
+    width: clamp(min(calc(35% + 100px)),40%,50%);
+}
+
+.contact-container{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(180deg,rgba(202, 202, 238, 0.788) 10%,lightblue 80%,rgba(0, 0, 139, 0.277) 110%);
+    position: relative;
+}
+
+.contact-form{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+}
+
+fieldset{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex: 1 1 300px;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-content: flex-start;
+    padding: 1.5rem;
+}
+
+
+.line-area{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+legend{
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+
+div>label{
+    padding-right: 10px;
+    font-size: 1.2rem;
+    color:rgb(66, 63, 95);
+    width: 6rem;
+}
+
+div>input{
+    flex-grow: 1;
+    padding: 0 2px;
+}
+
+div>label,div>input{
+    line-height: 1.6;
+}
+
+textarea{
+    flex-grow: 1;
+    resize: none;
+    padding: 2px;
+}
+
+
+#transitions{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(30deg,rgba(2, 18, 82, 0.715) 0%,rgb(13, 41, 203) 30%,rgba(100,100,150) 90%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.reset-btn button{
+    background-color: aquamarine;
+    line-height: 2;
+    width: 70px;
+    padding: 2px 3px;
+    border-radius: 10% 5%;
+    border-style: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.reset-btn button:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+}
+
+
+.submit-btn>input{
+    background-color: aquamarine;
+    line-height: 2;
+    width: 70px;
+    padding: 2px 3px;
+    border-radius: 10% 5%;
+    border-style: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    transition: all .5s;
+}
+
+.submit-btn>input:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+}
+
+.submit-btn{
+    margin-left: auto;
+}
+
+
+.txt{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: clamp(2rem,45vw,5rem);
+    -webkit-text-stroke: 2px white;
+}
+
+/*
+.box{
+    width: 100px;
+    height: 100px;
+}
+.box1{
+    background-color: crimson;
+    position: relative;
+    top: 50px;
+
+}
+
+.box2{
+    background-color: royalblue;
+    position: absolute;
+    top: 0;
+    left: 75px;
+    right: 25px;
+}
+
+
+
+
+.container{
+    background-color: lightseagreen;
+}
+
+.box3{
+    background-color: darkgreen;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+.container2{
+    background-color: rgb(128, 112, 189);
+    position: relative;
+}
+
+.box4{
+    background-color: darkmagenta;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    right: 20px;
+} */
